@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Dark Mode and Light Mode */
+.bg-gray-900 {
+  background-color: #1a202c; /* Dark background */
+}
+
+.bg-white {
+  background-color: #ffffff; /* Light background */
+}
+
+.text-white {
+  color: #ffffff; /* White text */
+}
+
+.text-black {
+  color: #000000; /* Black text */
+}
+
+/* Layout */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Header */
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-b {
+  border-bottom: 1px solid;
+}
+
+.border-gray-700 {
+  border-color: #4a5568;
+}
+
+/* Typography */
+.text-3xl {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.bg-blue-500 {
+  background-color: #4299e1;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Section Spacing */
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Text Colors */
+.text-gray-600 {
+  color: #7191b2;
+}
+
+/* Pre-line Formatting */
+.whitespace-pre-line {
+  white-space: pre-line;
+}

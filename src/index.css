@@ -9,6 +9,8 @@ body {
   background-color: #1a202c; /* Dark background */
 }
 
+
+
 .bg-white {
   background-color: #ffffff; /* Light background */
 }
@@ -134,4 +136,72 @@ a {
 /* Pre-line Formatting */
 .whitespace-pre-line {
   white-space: pre-line;
+}
+
+.delete-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+}
+
+.delete-form-wrapper {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.delete-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #dc2626;
+  text-align: center;
+}
+
+.delete-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.delete-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.delete-form .form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.delete-form .form-input:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3);
+}
+
+.delete-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #dc2626;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
 }

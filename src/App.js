@@ -1,22 +1,38 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import DeleteAccount from "./deleteAccount";
 import './index.css';
-export default function App() {
-  const [darkMode, setDarkMode] = useState(true);
+
+function Home({ toggleTheme, darkMode }) {
+  const navigate = useNavigate();
 
   return (
     <div className={darkMode ? "bg-gray-900 text-white min-h-screen" : "bg-white text-black min-h-screen"}>
       <header className="p-6 text-center border-b border-gray-700">
         <h1 className="text-3xl font-bold">Reverie Facade</h1>
-        <button onClick={() => setDarkMode(!darkMode)} className="mt-2 px-4 py-2 bg-gray-800 text-white rounded-md">
+        <button
+          onClick={toggleTheme}
+          className="mt-2 px-4 py-2 bg-gray-800 text-white rounded-md"
+        >
           Toggle Theme
         </button>
+        <button
+          onClick={() => navigate("/delete-account")}
+          style={{backgroundColor:"#ca2d2d",padding:"1rem",marginLeft:"2rem",borderRadius:"1rem"}}
+        >
+          Delete Account
+        </button>
       </header>
-      
+
       <main className="p-6">
         <section className="text-center mb-6">
           <h2 className="text-2xl font-semibold">Welcome to Reverie Facade</h2>
-          <p className="mt-2">An AI-powered app designed to aid in self-awareness and recovery from maladaptive daydreaming.</p>
-          <div  className="inline-block mt-4 px-6 py-3 bg-blue-500 text-white rounded-md">Download the App</div>
+          <p className="mt-2">
+            An AI-powered app designed to aid in self-awareness and recovery from maladaptive daydreaming.
+          </p>
+          <div className="inline-block mt-4 px-6 py-3 bg-blue-500 text-white rounded-md">
+            Download the App
+          </div>
         </section>
 
         <section className="mb-6">
@@ -65,5 +81,21 @@ export default function App() {
         </section>
       </main>
     </div>
+  );
+}
+
+export default function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home darkMode={darkMode} toggleTheme={() => setDarkMode(!darkMode)} />}
+        />
+        <Route path="/delete-account" element={<DeleteAccount />} />
+      </Routes>
+    </Router>
   );
 }
